@@ -21,10 +21,8 @@ class Convert{
 			
 			// str
 			case '[object String]':
-				return t
-					.split('/')
-					.map(v => {return new Buffer(v, 'binary').toString()})
-					.join('/');
+				return new Buffer(t, 'binary').toString();
+					
 			
 			// array
 			case '[object Array]':
