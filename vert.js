@@ -59,25 +59,3 @@ jsmediatags.read( file, {
 // const str = ['test'];
 // const str = { test : 'test' };
 // console.log(con.vert(str));
-
-
-// // 866 cp1251 koi8r win1251
-// function cnv (str){
-// 	return iconv.decode( new Buffer(str, 'binary'), 'utf8');
-// }
-
-// jsmediatags.read("./02 - Мумий Тролль - Прости, Киска!.mp3", {
-//   onSuccess: function(tag) {
-
-//     console.log( tag.tags );
-//     console.log('---result----');
-//     console.log( {
-//     tags:{
-//     	TIT2: tag.tags.TIT2.map( function(t){
-//     		t.data = cnv(t.data);
-//     		return t}),
-//     }});
-//   onError: function(error) {
-//     console.log(':(', error.type, error.info);
-//   }
-// });
