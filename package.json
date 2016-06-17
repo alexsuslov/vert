@@ -1,0 +1,11 @@
+{
+  "name": "vert",
+  "version": "1.0.0",
+  "description": "convert id3 tags",
+  "main": "vert.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alex Suslov",
+  "license": "MIT"
+}
