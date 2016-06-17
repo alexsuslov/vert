@@ -1,3 +1,4 @@
+#!/usr/bin/env babel-node
 /**
  * Vert
  */
@@ -5,7 +6,10 @@ import  jsmediatags from "jsmediatags";
 // import  iconv from 'iconv-lite';
 
 const file = process.argv[2];
-if(!file) process.exit(1);
+if(!file) {
+	console.log(`Use: vert.js {file}`);
+	process.exit(1);
+}
 
 console.log('Use :', file);
 
